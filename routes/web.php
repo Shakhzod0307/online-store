@@ -17,7 +17,7 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+}); 
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/userlogin', [AuthController::class, 'postlogin'])->name('userlogin');
